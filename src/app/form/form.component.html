@@ -1,0 +1,9 @@
+<form>
+  <label>Write a post</label>
+  <textarea #newPost></textarea>
+  <button (click)="addPost(newPost.value); newPost.value=''">Submit Post</button>
+</form>
+
+<ul>
+  <li *ngFor="let post of posts">{{post}}</li>
+</ul>
